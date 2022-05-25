@@ -1,0 +1,25 @@
+header{
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+    background-color: pink;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-right-width: 8px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 8px;
+}
+body{
+    background-image: url(pngwing.com.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center 200px;
+    background-attachment: fixed;
+    background-color: aquamarine;
+    mix-blend-mode: multiply;   
+}

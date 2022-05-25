@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+            p{
+                width: 30%;
+                position: absolute;
+                left: 3%;
+                top: 30%;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style:inherit;
+            }
+            img{
+                width: 30%;
+                height: 400px;
+                position: absolute;
+                left: 68%;
+                top: 33%;
+            }
+
+            #more {display: none;}
+
+            .myBtn{
+                border: 2px solid #ffffff;;
+                color: gray;
+                padding: 16px 20px;
+                text-align: center;
+                font-size: 11px;
+                margin: 2px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .myBtn:hover {
+                opacity: 1
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flamingo Coffee</h1>
+    </header>
+    <img src="ab1.jpg" alt="">
+    
+    <p>
+        We strive to provide the best roasted coffee selections.
+        We are aware of the different tastes, so we have taken it upon ourselves to be a cafe that exceeds your expectations.
+        <span id="dots">...</span><span id="more"> We believe in sharing opinions with Aamal and through hard work since 2013.
+        We are racing against time to gain experience to be among our favorite daily coffee list.
+        At Flamingo we strive to provide more than coffee Wonderful prepared but presented and presented to you.
+    </span>
+    <button onclick="myFunction()" class="myBtn" id="myBtn">Read more</button></p>
+    
+    <script>
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+            
+        if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+        }
+        }
+    </script>
+</body>
+</html>
